@@ -3,9 +3,9 @@ from setuptools import setup
 with open('README.md', 'r', encoding='utf-8') as fh:
     long_description = fh.read()
 
-setup(name='stupidArtnet',
+setup(name='stupid-artnet',
       author='cpvalente',
-      version='1.0.2',
+      version='1.0.3',
       license='MIT',
       description='(Very) Simple implementation of the Art-Net protocol',
       long_description=long_description,

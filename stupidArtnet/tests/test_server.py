@@ -1,5 +1,5 @@
 import unittest
-from StupidArtnetServer import StupidArtnetServer
+from stupidArtnet import StupidArtnetServer
 import socket
 import time
 

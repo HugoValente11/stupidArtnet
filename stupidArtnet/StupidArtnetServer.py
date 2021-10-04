@@ -11,7 +11,7 @@ NOTES
 
 import socket
 from threading import Thread
-from ArtnetUtils import shift_this, make_address_mask
+from stupidArtnet.ArtnetUtils import make_address_mask
 
 
 class StupidArtnetServer():
@@ -127,6 +127,8 @@ class StupidArtnetServer():
     def get_buffer(self, listener_id):
         """Return buffer values."""
         for listener in self.listeners:
+            print(listener)
+            print(listener.get('simplified'))
             if (listener.get('id') == listener_id):
                 return(listener.get('buffer'))
 

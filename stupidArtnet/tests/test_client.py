@@ -1,5 +1,5 @@
 import unittest
-from StupidArtnet import StupidArtnet
+from stupidArtnet import StupidArtnet
 import socket
 
 

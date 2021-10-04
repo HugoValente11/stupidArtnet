@@ -46,14 +46,17 @@ time.sleep(3)
 # use the given id to access it
 buffer = a.get_buffer(u1_listener)
 
-# Remember to check the buffer size, as this may vary from 512
-print(len(buffer))
+print(buffer)
 
-# in which channel 1 would be
-buffer[0]
+if (len(buffer) > 0):
+    # Remember to check the buffer size, as this may vary from 512
+    print(len(buffer))
 
-# and channel 20 would be
-buffer[19]
+    # in which channel 1 would be
+    buffer[0]
 
-# Cleanup when you are done
-del a
+    # and channel 20 would be
+    buffer[19]
+
+    # Cleanup when you are done
+    del a
